@@ -1,0 +1,51 @@
+<html>
+     <head>
+    <title>Votes</title>
+  </head>
+    <h1> Vote for the design you like!</h1>
+    <a href="https://www.instagram.com/ ">
+    <body>
+        <h2>Design</h2>
+        <img src="" alt="">
+        <h4>1</h4>
+        <img src="" alt="">
+        <h4>2</h4>
+        <img src="" alt="">
+        <h4>3</h4>
+        <h2>Placement</h2>
+        <img src="" alt="">
+        <h4>1</h4>
+        <img src="" alt="">
+        <h4>2</h4>
+        <img src="" alt="">
+        <h4>3</h4>
+    <form>
+  <div>
+    <label for="what_design_do_you_like">What design do you like?</label>
+    <input type="checkbox" id="what_image_design_do_you_like_0" name="what_image_design_do_you_like" value="option1">
+    <label for="what_image_design_do_you_like_0">1</label>
+    <input type="checkbox" id="what_image_design_do_you_like_1" name="what_image_design_do_you_like" value="option2">
+    <label for="what_image_design_do_you_like_1">2</label>
+    <input type="checkbox" id="what_image_design_do_you_like_2" name="what_image_design_do_you_like" value="option3">
+    <label for="what_image_design_do_you_like_2">3</label>
+  </div>
+  <div>
+    <label for="what_image_design_do_you_like">What design placement do you like?</label>
+    <input type="checkbox" id="what_image_design_do_you_like_0" name="what_image_design_do_you_like" value="option1">
+    <label for="what_image_design_do_you_like_0">1</label>
+    <input type="checkbox" id="what_image_design_do_you_like_1" name="what_image_design_do_you_like" value="option2">
+    <label for="what_image_design_do_you_like_1">2</label>
+    <input type="checkbox" id="what_image_design_do_you_like_2" name="what_image_design_do_you_like" value="option3">
+    <label for="what_image_design_do_you_like_2">3</label>
+  </div>
+  <div>
+    <label for="what_image_design_do_you_like">What type of result would you like?</label>
+    <input type="checkbox" id="what_image_design_do_you_like_0" name="what_image_design_do_you_like" value="option1">
+    <label for="what_image_design_do_you_like_0">Embroidery</label>
+    <input type="checkbox" id="what_image_design_do_you_like_1" name="what_image_design_do_you_like" value="option2">
+    <label for="what_image_design_do_you_like_1">Graphic (Print Pressed)</label>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+    </body>
+</html>
