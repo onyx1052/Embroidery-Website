@@ -2,21 +2,60 @@
 <html>
      <head>
         <title> Zonex Home </title>
+        <link rel="stylesheet" href="wireframe.css"/>
     </head>
-    <header>
-        <nav>
-            <a href="repairs"></a>
-        </nav>
-    </header>
-    
     <body>
+        <header>
+        <nav aria-label="Main navigation">
+            <!-- Top row container for logo and hamburger -->
+
+            <!-- Logo on the left -->
+            <a href="index.html" class="nav-logo" aria-label="Home">
+                <div class="nav-logo-circle">LOGO</div>
+            </a>
+
+            <div class="flex-right">
+            <!-- Hamburger menu button - only visible on mobile -->
+                <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+                    <span class="sr-only">Toggle navigation menu</span>
+                </button>
+
+             <!-- your HTML pages go in this list-->
+                <ul id="main-nav" aria-expanded="false">
+                    <li>
+                        <a href="product.html">
+                            Product
+                        </a>
+                    </li>
+                    <li>
+                        <a href="votes.html">
+                           Votes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="repairs.html">
+                           Repairs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="aboutus.html">
+                           About Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+        <main> 
         <img src="toa-heftiba-ScuVVivQPTc-unsplash">
         <h2>Embroidery</h2>
         <img>
         <h2>Graphic Tee</h2>
         <img>
         <h2>Accessoires</h2>
+        <footer>
+        Copyright 2025
+        </footer>
+        <script src="nav.js"></script>
     </body>
-<script src="nav.js"></script>
-<script src="wireframe"></script>
 </html>
