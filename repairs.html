@@ -3,6 +3,47 @@
     <title>Repairs</title>
     <link rel="stylesheet" href="wireframe.css"/>
   </head>
+  <header>
+    <nav aria-label="Main navigation">
+            <!-- Top row container for logo and hamburger -->
+
+            <!-- Logo on the left -->
+            <a href="index.html" class="nav-logo" aria-label="Home">
+                <div class="nav-logo-circle">LOGO</div>
+            </a>
+
+            <div class="flex-right">
+            <!-- Hamburger menu button - only visible on mobile -->
+                <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+                    <span class="sr-only">Toggle navigation menu</span>
+                </button>
+
+             <!-- your HTML pages go in this list-->
+                <ul id="main-nav" aria-expanded="false">
+                    <li>
+                        <a href="product.html">
+                            Product
+                        </a>
+                    </li>
+                    <li>
+                        <a href="votes.html">
+                           Votes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="repairs.html">
+                           Repairs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="aboutus.html">
+                           About Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+  </header>
 <form>
   <h2>Customer Information</h2>
   <div>
@@ -86,4 +127,8 @@
   </div>
   <button type="submit">Submit</button>
 </form>
+   <footer>
+        Copyright 2025
+   </footer>
+  <script src="nav.js"></script>
 </html>
