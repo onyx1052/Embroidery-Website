@@ -1,49 +1,38 @@
 <html>
-  <head>
-    <title>Repairs</title>
-    <link rel="stylesheet" href="style.css"/>
-  </head>
-  <header>
-    <nav aria-label="Main navigation">
-            <!-- Top row container for logo and hamburger -->
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Repairs </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Zonex logo" class="site-logo" width="140" height="28">
+                </a>
+            </div>
 
-            <!-- Logo on the left -->
-            <a href="index.html" class="nav-logo" aria-label="Home">
-              <img src="images/logo.png" alt="Zonex logo" class="site-logo" width="140" height="28">
-            </a>
-
-            <div class="flex-right">
-            <!-- Hamburger menu button - only visible on mobile -->
-                <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
-                    <span class="sr-only">Toggle navigation menu</span>
+            <div>
+                <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Open navigation menu">
+                    <span class="icon" aria-hidden="true">☰</span>
                 </button>
 
-             <!-- your HTML pages go in this list-->
-                <ul id="main-nav" aria-expanded="false">
-                    <li>
-                        <a href="product.html">
-                            Product
-                        </a>
-                    </li>
-                    <li>
-                        <a href="votes.html">
-                           Votes
-                        </a>
-                    </li>
-                    <li>
-                        <a href="repairs.html">
-                           Repairs
-                        </a>
-                    </li>
-                    <li>
-                        <a href="aboutus.html">
-                           About Us
-                        </a>
-                    </li>
-                </ul>
+                <nav class="nav" id="main-nav">
+                    <ul>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="votes.html">Votes</a></li>
+                        <li><a href="repairs.html">Repairs</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                    </ul>
+                </nav>
             </div>
-        </nav>
-  </header>
+        </header>
+        <main> 
+    <!-- Top Repairs banner -->
+    <div class="repairs-banner" role="region" aria-label="Repairs banner">
+      <div class="repairs-banner-text">REPAIRS</div>
+    </div>
 <form>
   <h2>Customer Information</h2>
   <div>
@@ -70,24 +59,38 @@
   <h2>Item Information</h2>
   <div>
     <label for="_5">Type of clothing (check one): </label>
-    <input type="checkbox" id="_5_0" name="_5" value="option1">
-    <label for="_5_0">Embroidered Shirt </label>
-    <input type="checkbox" id="_5_1" name="_5" value="option2">
-    <label for="_5_1">Graphic Tee</label>
-    <input type="checkbox" id="_5_2" name="_5" value="option3">
-    <label for="_5_2">Hoodie</label>
+    <div class="option-row">
+      <input type="checkbox" id="_5_0" name="_5" value="option1">
+      <label for="_5_0">Embroidered Shirt </label>
+    </div>
+    <div class="option-row">
+      <input type="checkbox" id="_5_1" name="_5" value="option2">
+      <label for="_5_1">Graphic Tee</label>
+    </div>
+    <div class="option-row">
+      <input type="checkbox" id="_5_2" name="_5" value="option3">
+      <label for="_5_2">Hoodie</label>
+    </div>
   </div>
   <h2>Repair Needed</h2>
   <div>
     <label for="_6">Type of Damage (check all that apply): </label>
-    <input type="checkbox" id="_6_0" name="_6" value="option1">
-    <label for="_6_0">Embroidery coming loose </label>
-    <input type="checkbox" id="_6_1" name="_6" value="option2">
-    <label for="_6_1">Small tear / hole</label>
-    <input type="checkbox" id="_6_2" name="_6" value="option3">
-    <label for="_6_2">Print fading or cracking</label>
-    <input type="checkbox" id="_6_3" name="_6" value="option4">
-    <label for="_6_3">Stain treatment request</label>
+    <div class="option-row">
+      <input type="checkbox" id="_6_0" name="_6" value="option1">
+      <label for="_6_0">Embroidery coming loose </label>
+    </div>
+    <div class="option-row">
+      <input type="checkbox" id="_6_1" name="_6" value="option2">
+      <label for="_6_1">Small tear / hole</label>
+    </div>
+    <div class="option-row">
+      <input type="checkbox" id="_6_2" name="_6" value="option3">
+      <label for="_6_2">Print fading or cracking</label>
+    </div>
+    <div class="option-row">
+      <input type="checkbox" id="_6_3" name="_6" value="option4">
+      <label for="_6_3">Stain treatment request</label>
+    </div>
   </div>
   <div>
     <label for="_7">Describe the Issue:</label>
@@ -100,12 +103,18 @@
   <h2>Repair Options</h2>
   <div>
     <label for="do_you_want_us_to">Do you want us to:</label>
-    <input type="checkbox" id="do_you_want_us_to_0" name="do_you_want_us_to" value="option1">
-    <label for="do_you_want_us_to_0">Restore it to original condition </label>
-    <input type="checkbox" id="do_you_want_us_to_1" name="do_you_want_us_to" value="option2">
-    <label for="do_you_want_us_to_1">Add a patch / new embroidery to make it unique</label>
-    <input type="checkbox" id="do_you_want_us_to_2" name="do_you_want_us_to" value="option3">
-    <label for="do_you_want_us_to_2">Surprise me with a creative fix </label>
+    <div class="option-row">
+      <input type="checkbox" id="do_you_want_us_to_0" name="do_you_want_us_to" value="option1">
+      <label for="do_you_want_us_to_0">Restore it to original condition </label>
+    </div>
+    <div class="option-row">
+      <input type="checkbox" id="do_you_want_us_to_1" name="do_you_want_us_to" value="option2">
+      <label for="do_you_want_us_to_1">Add a patch / new embroidery to make it unique</label>
+    </div>
+    <div class="option-row">
+      <input type="checkbox" id="do_you_want_us_to_2" name="do_you_want_us_to" value="option3">
+      <label for="do_you_want_us_to_2">Surprise me with a creative fix </label>
+    </div>
   </div>
   <h2>Shipping & Returns</h2>
   <div>
@@ -114,16 +123,22 @@
   </div>
   <div>
     <label for="preferred_shipping_method">Preferred Shipping Method:</label>
-    <input type="checkbox" id="preferred_shipping_method_0" name="preferred_shipping_method" value="option1">
-    <label for="preferred_shipping_method_0">Standard (cheapest)</label>
-    <input type="checkbox" id="preferred_shipping_method_1" name="preferred_shipping_method" value="option2">
-    <label for="preferred_shipping_method_1">Express (faster turnaround)</label>
+    <div class="option-row">
+      <input type="checkbox" id="preferred_shipping_method_0" name="preferred_shipping_method" value="option1">
+      <label for="preferred_shipping_method_0">Standard (cheapest)</label>
+    </div>
+    <div class="option-row">
+      <input type="checkbox" id="preferred_shipping_method_1" name="preferred_shipping_method" value="option2">
+      <label for="preferred_shipping_method_1">Express (faster turnaround)</label>
+    </div>
   </div>
   <h2>Agreement</h2>
   <div>
     <label for="by_submitting_this_form_i_agree_to_send_my_item_fo">By submitting this form, I agree to send my item for evaluation. I understand repairs may have a small fee depending on the damage, and I will be contacted before any charges are made.</label>
-    <input type="checkbox" id="by_submitting_this_form_i_agree_to_send_my_item_fo_0" name="by_submitting_this_form_i_agree_to_send_my_item_fo" value="option1">
-    <label for="by_submitting_this_form_i_agree_to_send_my_item_fo_0">I agree</label>
+    <div class="option-row">
+      <input type="checkbox" id="by_submitting_this_form_i_agree_to_send_my_item_fo_0" name="by_submitting_this_form_i_agree_to_send_my_item_fo" value="option1">
+      <label for="by_submitting_this_form_i_agree_to_send_my_item_fo_0">I agree</label>
+    </div>
   </div>
   <button type="submit">Submit</button>
 </form>
