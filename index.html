@@ -1,60 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
      <head>
-        <title> Zonex Home </title>
-        <link rel="stylesheet" href="style.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Zonex Home </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
     </head>
     <body>
-        <header>
-        <nav aria-label="Main navigation">
-            <!-- Top row container for logo and hamburger -->
+        <header class="site-header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Zonex logo" class="site-logo" width="140" height="28">
+                </a>
+            </div>
 
-            <!-- Logo on the left -->
-            <a href="index.html" class="nav-logo" aria-label="Home">
-                <div class="nav-logo-circle">LOGO</div>
-            </a>
-
-            <div class="flex-right">
-            <!-- Hamburger menu button - only visible on mobile -->
-                <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
-                    <span class="sr-only">Toggle navigation menu</span>
+            <div>
+                <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Open navigation menu">
+                    <span class="icon" aria-hidden="true">☰</span>
                 </button>
 
-             <!-- your HTML pages go in this list-->
-                <ul id="main-nav" aria-expanded="false">
-                    <li>
-                        <a href="product.html">
-                            Product
-                        </a>
-                    </li>
-                    <li>
-                        <a href="votes.html">
-                           Votes
-                        </a>
-                    </li>
-                    <li>
-                        <a href="repairs.html">
-                           Repairs
-                        </a>
-                    </li>
-                    <li>
-                        <a href="aboutus.html">
-                           About Us
-                        </a>
-                    </li>
-                </ul>
+                <nav class="nav" id="main-nav">
+                    <ul>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="votes.html">Votes</a></li>
+                        <li><a href="repairs.html">Repairs</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                    </ul>
+                </nav>
             </div>
-        </nav>
         </header>
         <main> 
-        <img src="images/embroiderypicoption.jpg" alt="embroidery clothing catagory">
-        <h1>Embroidery</h1>
-        <img src="images/graphicteeoption.jpg" alt="graphic tee clothing option">
-        <h1>Graphic Tee</h1>
-        <img src="images/accessoriesoption.jpg" alt="accessories option">
-        <h1>Accessories</h1>
+       
+        <!-- Promo card: uses images/promoad.png and custom styling in style.css -->
+        <section class="promo" aria-label="Promotional ad">
+            <div class="promo-inner" role="group">
+                <p class="promo-top">We made something for the ones<br>who stay real through it.</p>
+                <p class="promo-middle">THE WORLD’S GONE MAD.</p>
+                <a href="#" class="promo-btn" role="button">Join the MADNESS</a>
+            </div>
+        </section>
+
+        <section class="card">
+            <span>Embroidery</span>
+        </section>
+        <section class="card" id="gt">
+            <span>Graphic Tee</span>
+        </section>
+        <section class="card" id="acc">
+            <span>Accessories</span>
+        </section>
+
+        
+        
+        </main>
         <footer>
-        Copyright 2025
+            <div class="footer-box">
+                <div class="footer-text">Copyright 2025 ZONEX. All rights reserved</div>
+            </div>
         </footer>
         <script src="nav.js"></script>
     </body>

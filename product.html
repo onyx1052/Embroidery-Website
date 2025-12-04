@@ -1,53 +1,43 @@
 <html>
-  <head>
-        <title>Product</title>
-        <link rel="stylesheet" href="style.css"/>
+  <html lang="en">
+     <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Product </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
     </head>
-    <header>
-      <nav aria-label="Main navigation">
-            <!-- Top row container for logo and hamburger -->
+    <body>
+        <header class="site-header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Zonex logo" class="site-logo" width="140" height="28">
+                </a>
+            </div>
 
-            <!-- Logo on the left -->
-            <a href="index.html" class="nav-logo" aria-label="Home">
-                <div class="nav-logo-circle">LOGO</div>
-            </a>
-
-            <div class="flex-right">
-            <!-- Hamburger menu button - only visible on mobile -->
-                <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
-                    <span class="sr-only">Toggle navigation menu</span>
+            <div>
+                <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Open navigation menu">
+                    <span class="icon" aria-hidden="true">☰</span>
                 </button>
 
-             <!-- your HTML pages go in this list-->
-                <ul id="main-nav" aria-expanded="false">
-                    <li>
-                        <a href="product.html">
-                            Product
-                        </a>
-                    </li>
-                    <li>
-                        <a href="votes.html">
-                           Votes
-                        </a>
-                    </li>
-                    <li>
-                        <a href="repairs.html">
-                           Repairs
-                        </a>
-                    </li>
-                    <li>
-                        <a href="aboutus.html">
-                           About Us
-                        </a>
-                    </li>
-                </ul>
+                <nav class="nav" id="main-nav">
+                    <ul>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="votes.html">Votes</a></li>
+                        <li><a href="repairs.html">Repairs</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                    </ul>
+                </nav>
             </div>
-        </nav>
+        </header>
+        <main> 
     </header>
     <h1>Clothing</h1>  
     <p>Coming Soon</p>
        <footer>
-        Copyright 2025
+            <div class="footer-box">
+                <div class="footer-text">Copyright 2025 ZONEX. All rights reserved</div>
+            </div>
         </footer>
         <script src="nav.js"></script>
 </html>

@@ -1,0 +1,84 @@
+/* Responsive navigation styles (from gist) */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo,
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* Keep readable text fallback */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Logo image displayed in header */
+.site-logo {
+    width: 140px;  /* exact width requested */
+    height: 28px;  /* exact height requested */
+    display: block;
+    object-fit: contain; /* fit without distortion */
+}
+
+.nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-toggle .icon {
+    font-size: 1.5rem;
+    pointer-events: none;
+}
+
+.nav-toggle:focus {
+    outline: 2px solid #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .nav ul.open {
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav-toggle {
+        display: block;
+        height: 31px;
+    }
+}
