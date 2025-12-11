@@ -194,6 +194,11 @@ form button[type="submit"] {
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
+
+}
+
+.card span {
+  z-index: 10;
 }
 
 .card::before {
@@ -205,12 +210,24 @@ form button[type="submit"] {
     left: 0;
     top: 0;
     opacity:0;
+      transition: opacity 0.5s ease;
 }
 
 .card::after {
-   content: " ";
+   content: url("images/arrow.svg");
     position: absolute;
+    width: 20px;
+    height: 20px;
+    fill: white;
+    bottom: 53px;
+    right: 38px;
+    opacity: 0;
+      transition: opacity 0.5s ease;
 
+}
+
+.card:hover::after, .card:hover::before, .card:focus::after, .card:focus::before {
+  opacity: 1;
 }
 
 
@@ -593,7 +610,7 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 77.49%, rgba(0, 0, 0, 0.
    MEDIA QUERIES - STYLE OVERRIDES FOR DESKTOP
    ======================================== */
 
-@media (min-width: 1060px) {
+@media (min-width: 1315px) {
   .card {
     max-width: 385px;
   }
