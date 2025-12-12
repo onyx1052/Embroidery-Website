@@ -331,7 +331,8 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 77.49%, rgba(0, 0, 0, 0.
   font-size: 12px;
   font-weight: 600;
   text-decoration: none;
-  margin: -24px;
+  margin-top: -25px;
+  margin-bottom: -8px;
 }
 
 .promo-btn:hover,
@@ -394,6 +395,7 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 77.49%, rgba(0, 0, 0, 0.
   font-family: "Permanent Marker", cursive;
   font-size: 24px;
   font-weight: 400;
+  margin-bottom: 8px;
 }
 
 .votepromo-btn {
@@ -411,6 +413,8 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 77.49%, rgba(0, 0, 0, 0.
   font-size: 12px;
   font-weight: 600;
   text-decoration: none;
+  margin-top: 6px;
+  margin-bottom: 20px;
 }
 
 .votepromo-btn:hover,
