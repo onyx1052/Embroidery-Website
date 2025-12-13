@@ -502,7 +502,6 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 77.49%, rgba(0, 0, 0, 0.
   display: flex;
   width: 393px;
   height: 309.865px;
-  padding: 0 42px;
   align-items: flex-end;
   gap: 10px;
   aspect-ratio: 393.00/309.87;
@@ -534,6 +533,7 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 77.49%, rgba(0, 0, 0, 0.
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  padding: 0px 30px
 }
 
 .placement-card-votes-2-text,
