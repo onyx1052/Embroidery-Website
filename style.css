@@ -597,9 +597,9 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 77.49%, rgba(0, 0, 0, 0.
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 800px;
-  height: 533px;
-  max-width: 110%;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
 }
 
 /* About Us page content - center text */
