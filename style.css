@@ -451,8 +451,9 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 77.49%, rgba(0, 0, 0, 0.
 
 .coolalien-card {
   padding: 0 28px;
-  background: url('images/coolalien-1.png') lightgray 0px 0px / 100% 100% no-repeat;
-  background-size: cover;
+  background: url('images/coolalien-1.png');
+  background-size: contain;
+  background-position: center;
 }
 
 .coolskull-card,
