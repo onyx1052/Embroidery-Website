@@ -35,6 +35,12 @@
 .nav a {
     text-decoration: none;
     color: #333;
+    transition: 0.5s ease color;
+}
+
+.nav a:hover {
+    color: red;
+    text-decoration: underline;
 }
 
 .nav-toggle {

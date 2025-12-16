@@ -623,7 +623,7 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 77.49%, rgba(0, 0, 0, 0.
   width: auto;
   height: auto;
   text-align: left; 
-  margin: 0 40px;
+  margin: 10px 40px;
 }
 
 .aboutus-content img {
