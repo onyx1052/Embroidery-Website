@@ -91,6 +91,12 @@ h2 {
   line-height: normal;
 }
 
+.repairs-image img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 /* Footer box used across pages */
 .footer-box {
   padding: 121px 29px 15px;
@@ -193,7 +199,7 @@ form button[type="submit"] {
   align-items: flex-start;
   gap: 10px;
   flex-shrink: 0;
-  padding-top: 300px;
+  padding-top: 450px;
   width: 100%;
   /* aspect-ratio: 385/538;
   max-width: 385px; */

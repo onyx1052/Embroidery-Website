@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 30px 1rem;
     background: #fff;
     border-bottom: 1px solid #ccc;
 }
@@ -20,10 +20,8 @@
 
 /* Logo image displayed in header */
 .site-logo {
-    width: 140px;  /* exact width requested */
-    height: 28px;  /* exact height requested */
-    display: block;
-    object-fit: contain; /* fit without distortion */
+    width: 250px;
+    height: auto;
 }
 
 .nav ul {
