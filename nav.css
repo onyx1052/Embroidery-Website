@@ -38,7 +38,7 @@
     transition: 0.5s ease color;
 }
 
-.nav a:hover {
+.nav a:hover, .nav a:focus {
     color: red;
     text-decoration: underline;
 }
