@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 30px 1rem;
     background: #fff;
     border-bottom: 1px solid #ccc;
 }
@@ -20,10 +20,8 @@
 
 /* Logo image displayed in header */
 .site-logo {
-    width: 140px;  /* exact width requested */
-    height: 28px;  /* exact height requested */
-    display: block;
-    object-fit: contain; /* fit without distortion */
+    width: 250px;
+    height: auto;
 }
 
 .nav ul {
@@ -37,6 +35,12 @@
 .nav a {
     text-decoration: none;
     color: #333;
+    transition: 0.5s ease color;
+}
+
+.nav a:hover, .nav a:focus {
+    color: red;
+    text-decoration: underline;
 }
 
 .nav-toggle {
@@ -75,6 +79,7 @@
     .nav ul.open {
         display: flex;
         gap: 20px;
+        z-index:100;
     }
 
     .nav-toggle {
