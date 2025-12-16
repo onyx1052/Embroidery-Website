@@ -455,11 +455,6 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 77.49%, rgba(0, 0, 0, 0.
   background-size: cover;
 }
 
-.coolskull-card,
-.coolduck-card {
-  margin-top: 25px;
-}
-
 .coolskull-card {
   padding: 0 20px;
   background: url('images/CoolSkull-2.png') lightgray 50% / cover no-repeat;
@@ -509,11 +504,6 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 77.49%, rgba(0, 0, 0, 0.
 
 .placement-card-votes {
   background: url('images/PlacementonShirt1.png') lightgray 50% / cover no-repeat;
-}
-
-.placement-card-votes-2,
-.placement-card-votes-3 {
-  margin-top: 25px;
 }
 
 .placement-card-votes-2 {
