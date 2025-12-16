@@ -75,6 +75,7 @@
     .nav ul.open {
         display: flex;
         gap: 20px;
+        z-index:100;
     }
 
     .nav-toggle {
